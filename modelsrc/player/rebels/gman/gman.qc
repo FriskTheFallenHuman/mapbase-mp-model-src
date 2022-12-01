@@ -359,7 +359,8 @@ $sequence "ragdoll" {
 	fps 30
 }
 
-$includemodel "player/mapbase_player_male_anims.mdl"
+$includemodel "player/mapbase_male_anims.mdl"
+$includemodel "humans/male_ss.mdl"
 
 $collisionjoints "gman_physics.dmx"
 {
