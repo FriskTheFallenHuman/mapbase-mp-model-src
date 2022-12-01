@@ -1,0 +1,11 @@
+// Created by Crowbar 0.68
+version 1
+nodes
+  0 "Physgun.bone" -1
+  1 "Physgun.Core_Attachment" 0
+end
+skeleton
+  time 0
+    0 0.000000 0.000000 0.000000 1.570669 0.000064 -0.000064
+    1 0.523248 2.510681 23.975893 0.000000 0.000000 1.570796
+end
