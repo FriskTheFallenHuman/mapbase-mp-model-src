@@ -1,6 +1,6 @@
 // Created by Crowbar 0.68
 
-$modelname "weapons/w_models/w_physics.mdl"
+$modelname "weapons/w_models/w_physicscannon.mdl"
 
 $bodygroup "studio"
 {
