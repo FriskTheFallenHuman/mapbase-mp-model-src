@@ -148,7 +148,7 @@ $sequence "ragdoll" {
 }
 
 $includemodel "player/mapbase_police_anims.mdl"
-//$includemodel "Police_ss.mdl"
+$includemodel "Police_ss.mdl"
 
 $collisionjoints "Police_physics.dmx"
 {

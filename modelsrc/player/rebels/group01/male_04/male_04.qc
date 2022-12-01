@@ -1,6 +1,6 @@
 // Created by Crowbar 0.72
 
-$modelname "Humans\Group01\Male_04.mdl"
+$modelname "player/rebels/male_gr01_04.mdl"
 
 $model "male_04" "male_04_reference.smd" {
 
@@ -511,7 +511,7 @@ $ikautoplaylock "rfoot" 1 0.1
 $ikautoplaylock "lfoot" 1 0.1
 
 $sequence "ragdoll" {
-	"male_04_anims\ragdoll.smd"
+	"anims\ragdoll.smd"
 	activity "ACT_DIERAGDOLL" 1
 	fadein 0.2
 	fadeout 0.2
@@ -522,10 +522,8 @@ $sequence "ragdoll" {
 	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 100 100 target 3
 }
 
-$includemodel "humans/male_shared.mdl"
+$includemodel "player/mapbase_male_anims.mdl"
 $includemodel "humans/male_ss.mdl"
-$includemodel "humans/male_gestures.mdl"
-$includemodel "humans/male_postures.mdl"
 
 $collisionjoints "male_04_physics.smd"
 {

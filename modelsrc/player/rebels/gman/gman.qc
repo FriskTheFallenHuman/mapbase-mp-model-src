@@ -314,33 +314,6 @@ $bonemerge "ValveBiped.Anim_Attachment_RH"
 
 $proceduralbones "gman.vrd"
 
-// The 32 below is a guess until further is known about the format.
-$animblocksize 32
-
-$bonesaveframe "ValveBiped.Bip01_Pelvis" position rotation
-$bonesaveframe "ValveBiped.Bip01_Spine" rotation
-$bonesaveframe "ValveBiped.Bip01_Spine1" rotation
-$bonesaveframe "ValveBiped.Bip01_Spine2" rotation
-$bonesaveframe "ValveBiped.Bip01_Spine4" rotation
-$bonesaveframe "ValveBiped.Bip01_Neck1" rotation
-$bonesaveframe "ValveBiped.Bip01_Head1" rotation
-$bonesaveframe "ValveBiped.Bip01_R_Clavicle" rotation
-$bonesaveframe "ValveBiped.Bip01_R_UpperArm" rotation
-$bonesaveframe "ValveBiped.Bip01_R_Forearm" rotation
-$bonesaveframe "ValveBiped.Bip01_R_Hand" rotation
-$bonesaveframe "ValveBiped.Bip01_L_Clavicle" rotation
-$bonesaveframe "ValveBiped.Bip01_L_UpperArm" rotation
-$bonesaveframe "ValveBiped.Bip01_L_Forearm" rotation
-$bonesaveframe "ValveBiped.Bip01_L_Hand" rotation
-$bonesaveframe "ValveBiped.Bip01_R_Thigh" rotation
-$bonesaveframe "ValveBiped.Bip01_R_Calf" rotation
-$bonesaveframe "ValveBiped.Bip01_R_Foot" rotation
-$bonesaveframe "ValveBiped.Bip01_L_Thigh" rotation
-$bonesaveframe "ValveBiped.Bip01_L_Calf" rotation
-$bonesaveframe "ValveBiped.Bip01_L_Foot" rotation
-
-$sectionframes 30 140
-
 $poseparameter "move_yaw" -180 180 loop 0
 
 $ikchain "rhand" "ValveBiped.Bip01_R_Hand" knee 0.707 0.707 0

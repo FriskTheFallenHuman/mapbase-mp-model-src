@@ -133,9 +133,7 @@ $sequence "ragdoll" {
 	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 60 60 target 3
 }
 
-// TODO: uncomment once this mdl can be compiled
-//$includemodel "player/mapbase_player_soldier_anims.mdl"
-$includemodel "player/mapbase_police_anims.mdl"
+$includemodel "player/mapbase_soldier_anims.mdl"
 
 $collisionjoints "Soldier_physics.dmx"
 {
