@@ -1,4 +1,4 @@
-// Created by Crowbar 0.68
+// Created by Crowbar 0.67
 
 // This setups the c_arms support!
 $include "../c_arms_definebones.qci"
@@ -10,16 +10,15 @@ $bodygroup "studio"
 	studio "SuperPhyscannon_reference.smd"
 }
 
-
 $surfaceprop "default"
 
 $contents "solid"
 
-$illumposition -8.546 -47.232 -11.292
+$illumposition 19.582 -15.465 -17.298
 
 $cdmaterials "models\weapons\v_physcannon\"
 
-$attachment "muzzle" "Muzzle" 0 0.25 -2 rotate 0 0 0
+$attachment "muzzle" "Base" 0.17 -3.43 18.09 rotate -90 -90 0
 $attachment "fork1b" "Base_A" 0 0 0 rotate 0 0 0
 $attachment "fork1m" "Prong_A" 0 0 0 rotate 0 0 0
 $attachment "fork1t" "Tip_A" 0 0 0 rotate 0 0 0
@@ -29,7 +28,7 @@ $attachment "fork2t" "Tip_B" 0 0 0 rotate 0 0 0
 
 $cbox 0 0 0 0 0 0
 
-$bbox 24.629 -19.654 -21.633 69.834 2.563 -0.952
+$bbox -38.904 -19.648 -34.644 69.834 58.813 0.048
 
 $definebone "Base" "" -12.471216 -41.194546 57.51926 0 0 89.999982 0 0 0 0 0 0
 $definebone "Prong_B" "Base" 4.71156 -5.687351 16.612514 0 0 0 0 0 0 0 0 0
@@ -51,11 +50,11 @@ $poseparameter "active" 0 1 loop 0
 
 $weightlist "weights_prong_blend" {
 	 "Base" 0
-	 "Prong_B" 1
-	 "Base_B" 1
-	 "Tip_B" 1
 	 "Prong_A" 1
 	 "Base_A" 1
+	 "Prong_B" 1
+	 "Tip_B" 1
+	 "Base_B" 1
 	 "Tip_A" 1
 	 "Doodad_4" 0
 	 "Doodad_3" 0
@@ -146,4 +145,5 @@ $sequence "prong_blend" {
 	blendwidth 2
 	fadein 0.2
 	fadeout 0.2
+	hidden
 }

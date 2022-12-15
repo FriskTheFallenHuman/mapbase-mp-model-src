@@ -1,4 +1,4 @@
-// Created by Crowbar 0.72
+// Created by Crowbar 0.67
 
 // This setups the c_arms support!
 $include "../c_arms_definebones.qci"
@@ -7,38 +7,23 @@ $modelname "weapons/c_models/c_crowbar.mdl"
 
 $bodygroup "studio"
 {
-	studio "crowbar_reference.dmx"
+	studio "crowbar_reference.smd"
 }
-
 
 $surfaceprop "default"
 
 $contents "solid"
 
-$illumposition -8.644 -25.37 -15.379
+$illumposition 4.762 -23.642 -16.423
 
+$cdmaterials "models\Weapons\V_hand\"
 $cdmaterials "models\Weapons\v_crowbar\"
 
-$attachment "0" "ValveBiped.Tip" 0 0 0 rotate 0 0 0
+$attachment "0" "ValveBiped.HandControlRotGrandmaR" 21.87 -14.67 5.81 rotate -73.91 93.02 135
 
 $cbox 0 0 0 0 0 0
 
-$bbox 7.416 -17.287 -33.063 43.324 0 2.306
-
-$definebone "ValveBiped.Bip01" "" -0.000005 -28.696043 38.566917 0 0 89.999982 0 0 0 0 0 0
-$definebone "ValveBiped.Bip01_Spine" "ValveBiped.Bip01" 0.000005 3.345127 -2.981899 4.944225 89.999982 89.999982 0 0 0 0 0 0
-$definebone "ValveBiped.Bip01_Spine1" "ValveBiped.Bip01_Spine" 4.018332 0 0 0 -1.675443 0 0 0 0 0 0 0
-$definebone "ValveBiped.Bip01_Spine2" "ValveBiped.Bip01_Spine1" 3.518565 0 0 0 5.74883 0 0 0 0 0 0 0
-$definebone "ValveBiped.Bip01_Spine4" "ValveBiped.Bip01_Spine2" 8.942641 0.000002 0 0 11.120881 0 0 0 0 0 0 0
-$definebone "ValveBiped.Bip01_R_Clavicle" "ValveBiped.Bip01_Spine4" 2.033355 1.000771 -1.93761 73.712037 168.618779 -95.596496 0 0 0 0 0 0
-$definebone "ValveBiped.Bip01_R_UpperArm" "ValveBiped.Bip01_R_Clavicle" 6.028143 -0.000001 0 78.953585 -88.125723 91.732603 0 0 0 0 0 0
-$definebone "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_R_UpperArm" 11.692552 0 0 0.000001 -18.575695 0.000004 0 0 0 0 0 0
-$definebone "ValveBiped.Bip01_R_Hand" "ValveBiped.Bip01_R_Forearm" 11.4817 -0.000001 0 0.513543 -3.125944 -105.465142 0 0 0 0 0 0
-$definebone "ValveBiped.HandControlRotGrandmaR" "" -6.855245 -37.470791 55.472576 -2.905985 -90.838736 -73.89305 0 0 0 0 0 0
-$definebone "ValveBiped.HandControlRotParentR" "ValveBiped.HandControlRotGrandmaR" 11.481698 -0.000002 0.000001 6.108074 2.532072 -89.66423 0 0 0 0 0 0
-$definebone "ValveBiped.HandControlRotR" "ValveBiped.HandControlRotParentR" 0.000001 0 -0.000002 5.625013 -5.625013 -15.749981 0 0 0 0 0 0
-$definebone "ValveBiped.Tip" "ValveBiped.HandControlRotR" 11.1231 -1.935452 -15.150156 -0.537148 -92.19487 -39.209626 0 0 0 0 0 0
-
+$bbox 7.189 -16.341 -34.009 40.095 25.866 1.163
 
 $sequence "idle01" {
 	"anims\idle01.smd"

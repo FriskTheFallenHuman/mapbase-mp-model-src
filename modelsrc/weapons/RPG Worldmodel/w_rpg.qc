@@ -4,13 +4,7 @@ $modelname "weapons/w_models/w_rpg.mdl"
 
 $bodygroup "studio"
 {
-	studio "w_rocket_launcher_reference.smd"
-}
-
-$lod 35
-{
-	replacemodel "w_rocket_launcher_reference.smd" "w_rocket_launcher_reference_lod1.smd"
-	nofacial
+	studio "RPG_reference.smd"
 }
 
 $surfaceprop "weapon"
@@ -35,9 +29,8 @@ $hbox 0 "ValveBiped.Anim_Attachment_RH" -3.598 -3.527 -27.896999 3.335 12.731 16
 $definebone "ValveBiped.Bip01_R_Hand" "" 0.312503 -16.71932 0.282627 12.461602 88.326429 177.528802 0 0 0 0 0 0
 $definebone "ValveBiped.Anim_Attachment_RH" "ValveBiped.Bip01_R_Hand" 2.676088 -1.71244 0 0 -89.999982 -89.999982 0 0 0 0 0 0
 
-
 $sequence "idle" {
-	"w_rocket_launcher_anims\idle.smd"
+	"anims\idle.smd"
 	activity "ACT_VM_IDLE" 1
 	fadein 0.2
 	fadeout 0.2
@@ -45,7 +38,7 @@ $sequence "idle" {
 }
 
 $sequence "attack1" {
-	"w_rocket_launcher_anims\attack1.smd"
+	"anims\attack1.smd"
 	activity "ACT_RANGE_ATTACK_RPG" 1
 	{ event AE_NPC_MUZZLEFLASH 0 "RPG MUZZLE" }
 	{ event 3002 0 "" }
@@ -55,7 +48,7 @@ $sequence "attack1" {
 	fps 30
 }
 
-$collisionmodel "w_rocket_launcher_physics.smd"
+$collisionmodel "RPG_physics.smd"
 {
 	$mass 20
 	$inertia 1

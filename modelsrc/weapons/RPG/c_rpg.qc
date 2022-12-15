@@ -3,33 +3,29 @@
 // This setups the c_arms support!
 $include "../c_arms_definebones.qci"
 
-$modelname "Weapons/c_models/c_rpg.mdl"
+$modelname "weapons/c_models/c_rpg.mdl"
 
 $bodygroup "studio"
 {
-	studio "RPG_reference.dmx"
+	studio "RPG_reference.smd"
 }
 
 $surfaceprop "default"
 
 $contents "solid"
 
-$illumposition -16.708 -36.922 -8.533
+$illumposition -19.908 -25.352 -16.251
 
 $cdmaterials "models\weapons\v_rocket_launcher\"
+$cdmaterials "models\Weapons\V_hand\"
 
-$attachment "0" "muzzle" 0 0 0 rotate 0 0 0
-$attachment "laser" "muzzle" -9 -5 0.5 rotate 0 0 0
-$attachment "laser_end" "muzzle" 100 -5 0.5 rotate 0 0 0
+$attachment "0" "base" -0.45 0.28 29 rotate -90 0 0
+$attachment "laser" "base" -0.96 -4.72 20 rotate -90 0 0
+$attachment "laser_end" "base" -0.92 -4.72 129 rotate -90 0 0
 
 $cbox 0 0 0 0 0 0
 
-$bbox 19.811 -26.381 -19.319 54.034 -7.035 2.252
-
-$definebone "base" "" -16.057949 -24.995756 64.720612 0 0 89.999982 0 0 0 0 0 0
-$definebone "muzzle" "base" -0.454765 0.279388 29.004242 -89.999982 0 0 0 0 0 0 0 0
-$definebone "arm" "base" 1.26345 -8.25547 7.260773 0 0 0 0 0 0 0 0 0
-
+$bbox 2.731 -34.072 -35.755 47.974 -5.745 3.252
 
 $sectionframes 30 159
 
@@ -88,7 +84,7 @@ $sequence "down_to_up" {
 	fadein 0.2
 	fadeout 0.2
 	transition "Low" "Idle"
-	fps 30
+	fps 15
 }
 
 $sequence "down_idle" {

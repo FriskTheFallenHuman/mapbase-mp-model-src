@@ -4,7 +4,7 @@ $modelname "weapons/w_models/w_stunstick.mdl"
 
 $bodygroup "studio"
 {
-	studio "Stunbaton_reference.smd"
+	studio "Stunstick_reference.dmx"
 }
 
 
@@ -44,7 +44,7 @@ $sequence "attack1" {
 	fps 30
 }
 
-$collisionmodel "w_stunbaton_physics.smd"
+$collisionmodel "Stunstick_physics.smd"
 {
 	$mass 3
 	$inertia 1

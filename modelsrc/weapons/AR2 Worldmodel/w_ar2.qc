@@ -1,12 +1,11 @@
 // Created by Crowbar 0.67
 
-$modelname "weapons/w_models/w_irifle.mdl"
+$modelname "weapons/w_models/w_ar2.mdl"
 
 $bodygroup "studio"
 {
-	studio "w_IRifle_reference.smd"
+	studio "AR2_reference.smd"
 }
-
 
 $surfaceprop "weapon"
 
@@ -34,7 +33,7 @@ $definebone "ValveBiped.muzzle" "ValveBiped.Weapon_bone" 28.579779 0.623145 -5.9
 
 
 $sequence "idle1" {
-	"w_irifle_anims\idle1.smd"
+	"anims\idle1.smd"
 	activity "ACT_VM_IDLE" 1
 	fadein 0.2
 	fadeout 0.2
@@ -44,7 +43,7 @@ $sequence "idle1" {
 }
 
 $sequence "fire" {
-	"w_irifle_anims\fire.smd"
+	"anims\fire.smd"
 	activity "ACT_RANGE_ATTACK_AR2" 1
 	{ event AE_NPC_MUZZLEFLASH 0 "COMBINE MUZZLE" }
 	{ event 3007 0 "1" }
@@ -54,7 +53,7 @@ $sequence "fire" {
 	fps 30
 }
 
-$collisionmodel "w_irifle_physics.smd"
+$collisionmodel "AR2_physics.smd"
 {
 	$mass 20
 	$inertia 1

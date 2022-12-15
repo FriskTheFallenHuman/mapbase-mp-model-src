@@ -3,38 +3,40 @@
 // This setups the c_arms support!
 $include "../c_arms_definebones.qci"
 
-$modelname "weapons/c_models/c_irifle.mdl"
+$modelname "weapons/c_models/c_ar2.mdl"
 
 $bodygroup "studio"
 {
-	studio "IRifle_reference_twohand.dmx"
+	studio "AR2_reference_twohand.smd"
 }
 
 $surfaceprop "default"
 
 $contents "solid"
 
-$illumposition -3.37 -20.728 -8.135
+$illumposition 0.138 -16.492 -8.668
 
+$cdmaterials "models\Weapons\V_hand\"
 $cdmaterials "models\weapons\v_irifle\"
 
 $attachment "muzzle" "Base" 0 0 20 rotate -90 0 0
 
 $cbox 0 0 0 0 0 0
 
-$bbox 3.083 -12.016 -16.407 38.372 5.276 0.136
+$bbox -7.388 -12.016 -18.464 40.372 12.292 1.128
 
 $definebone "Base" "" -5.846632 -11.638401 61.824333 0 0 89.999982 0 0 0 0 0 0
-$definebone "Reload" "Base" 1.526086 -2.764851 14.082601 0 0 0 0 0 0 0 0 0
+$definebone "Reload" "Base" 1.526086 -2.764851 14.0826 0 0 0 0 0 0 0 0 0
 $definebone "Reload1" "Reload" 0.832381 1.842239 -0.000374 0 0 0 0 0 0 0 0 0
-$definebone "Shell1" "Base" -0.05046 -0.056505 18.287695 0 0 0 0 0 0 0 0 0
-$definebone "Bolt1" "Base" -0.112315 0.055738 8.441935 0 0 0 0 0 0 0 0 0
-$definebone "Bolt2" "Bolt1" 0.487353 -0.167217 2.950581 0 0 0 0 0 0 0 0 0
-$definebone "Shell2" "Base" 1.617459 -1.028969 14.611864 0 0 0 0 0 0 0 0 0
-$definebone "Vent" "Base" 0.790197 0.067793 19.411802 0 0 0 0 0 0 0 0 0
-$definebone "Claw2" "Base" 0.599579 0.805453 17.492916 0 -38.249978 -30.000014 0 0 0 0 0 0
-$definebone "Claw1" "Base" 1.023674 -0.207506 17.423468 30.000018 -6.750017 0 0 0 0 0 0 0
+$definebone "Shell1" "Base" -0.05046 -0.056503 18.287693 0 0 0 0 0 0 0 0 0
+$definebone "Bolt1" "Base" -0.112315 0.055737 8.441936 0 0 0 0 0 0 0 0 0
+$definebone "Bolt2" "Bolt1" 0.487353 -0.167217 2.950579 0 0 0 0 0 0 0 0 0
+$definebone "Shell2" "Base" 1.617459 -1.028965 14.611858 0 0 0 0 0 0 0 0 0
+$definebone "Vent" "Base" 0.790197 0.067791 19.4118 0 0 0 0 0 0 0 0 0
+$definebone "Claw2" "Base" 0.599579 0.80545 17.492916 0 -38.249978 -30.000014 0 0 0 0 0 0
+$definebone "Claw1" "Base" 1.023674 -0.207508 17.423466 30.000018 -6.750017 0 0 0 0 0 0 0
 
+$sectionframes 30 150
 
 $poseparameter "VentPoses" 0 1 loop 0
 
