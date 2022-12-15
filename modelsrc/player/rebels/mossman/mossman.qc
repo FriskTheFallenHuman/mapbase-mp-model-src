@@ -330,6 +330,8 @@ $sequence "ragdoll" {
 
 $includemodel "player/mapbase_female_anims.mdl"
 $includemodel "humans/female_ss.mdl"
+$includemodel "humans/female_gestures.mdl"
+$includemodel "humans/female_postures.mdl"
 
 $collisionjoints "mossman_physics.dmx"
 {

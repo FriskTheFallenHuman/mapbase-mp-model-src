@@ -311,6 +311,8 @@ $sequence "ragdoll" {
 
 $includemodel "player/mapbase_male_anims.mdl"
 $includemodel "humans/male_ss.mdl"
+$includemodel "humans/male_gestures.mdl"
+$includemodel "humans/male_postures.mdl"
 
 $collisionjoints "eli_physics.dmx"
 {
